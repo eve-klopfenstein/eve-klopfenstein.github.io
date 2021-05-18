@@ -3,4 +3,6 @@ export const colors = {
     hoverLink: '#834a2f',
     headerBg: '#f8f8f8',
     pinkYellowGradient: 'linear-gradient(#f3d1dc, #fcf0cf)',
+    turquoise: '#72d6bf',
+    brightYellow: '#fdcf76'
 }
