@@ -5,12 +5,25 @@ import { screenSizes } from '../../styles/screenSizes';
 
 export const HeaderWrapper = styled.div`
     width: 100vw;
-    height: 10vh;
-    /* position: fixed; */
+    height: 8vh;
+    position: fixed;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: ${colors.headerBg};
+
+    #side-nav-wrapper {
+        display: none;
+
+        @media ${screenSizes.mobile} {
+            display: inline;
+        }
+    }
+
+    @media ${screenSizes.mobile} {
+        height: 10vh;
+    }
 
     @media ${screenSizes.mobileLandscape} {
         height: 20vh;
@@ -33,7 +46,7 @@ export const LogoImg = styled.img`
 `
 
 export const NavWrapper = styled.nav`
-    width: 35%;
+    width: 25%;
     min-width: 235px;
     margin: 0 2em 0 2em;
     display: flex;

@@ -20,7 +20,7 @@ const SideNav = ({sideNavOpened, onClick}) => {
                 <CloseIcon id='close-icon' onClick={onClick} />
                 <GreetingDiv>
                     <h2>{timeNow() < 12 ? 'Good Morning' : timeNow() < 18 ? 'Good Afternoon' : 'Good Evening'} </h2>
-                    <span id='waving-emoji'>👋</span>
+                    {/* <span className='waving-emoji'>👋</span> */}
                 </GreetingDiv>
                 <LinkWrapperNav>
                     <SideNavLink to='/'>

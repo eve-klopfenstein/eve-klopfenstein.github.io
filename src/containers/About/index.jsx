@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import AboutBody from '../../components/AboutBody'
 import Header from '../../components/Header'
 
 const About = () => {
@@ -6,7 +7,7 @@ const About = () => {
     return (
         <>
             <Header/>
-            <h1>About</h1>
+            <AboutBody/>
         </>
     )
 }

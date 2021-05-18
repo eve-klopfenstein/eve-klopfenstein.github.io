@@ -1,6 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import { Link } from 'react-router-dom';
 import { colors } from '../../styles/color';
+import { wavingAnimation } from '../../styles/keyframes';
 
 export const SideNavWrapper = styled.div`
 
@@ -30,33 +31,6 @@ export const SideNavWrapper = styled.div`
     }
 `
 
-const wavingAnimation = keyframes`
-    0% {
-        transform: rotate(0deg);
-    }
-    10% {
-        transform: rotate(14deg);
-    }
-    20% {
-        transform: rotate(-10deg);
-    }
-    30% {
-        transform: rotate(14deg);
-    }
-    40% {
-        transform:rotate(-4deg);
-    }
-    50% {
-        transform: rotate(14deg);
-    }
-    60% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
-`
-
 export const GreetingDiv = styled.div`
     margin-top: 3rem;
     display: flex;
@@ -64,7 +38,7 @@ export const GreetingDiv = styled.div`
     width: 75%;
     justify-content: space-between;
 
-    #waving-emoji {
+    .waving-emoji {
         font-size: 2rem;
         animation: ${wavingAnimation} 2.5s infinite;
         transform-origin: 70% 70%;
@@ -89,3 +63,4 @@ export const SideNavLink = styled(Link)`
     }
 
 `
+

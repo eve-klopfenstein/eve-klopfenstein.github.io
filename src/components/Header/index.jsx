@@ -10,10 +10,6 @@ const Header = () => {
 
     const [sideNavOpened, setSideNavOpened] = useState(false);
 
-    useEffect(() => {
-        console.log(sideNavOpened)
-    }, [sideNavOpened]) 
-
     return (
 
         <HeaderWrapper>
@@ -23,9 +19,9 @@ const Header = () => {
             <NavWrapper>
                 <NavigationLink to='/about'>About</NavigationLink>
                 <NavigationLink to='/portfolio'>Portfolio</NavigationLink>
-                <NavigationLink to='/contact'>Contact</NavigationLink>
+                {/* <NavigationLink to='/contact'>Contact</NavigationLink> */}
             </NavWrapper>
-            <div>
+            <div id='side-nav-wrapper'>
                 <HamburgerWrapper>
                     <MenuIcon onClick={() => setSideNavOpened(true)} />
                 </HamburgerWrapper>

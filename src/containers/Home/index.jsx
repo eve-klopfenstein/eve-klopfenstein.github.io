@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import Header from '../../components/Header'
+import HomeBody from '../../components/HomeBody'
 
 const Home = () => {
 
     return (
         <>
             <Header/>
-            <h1>Home</h1>
+            <HomeBody/>
         </>
     )
 }
